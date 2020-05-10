@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Website for Maquetación Adaptable">
+    <title></title>
+    <!--Styles-->
+    <link rel="stylesheet" href="css/main.css">
+    <!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--NAV-->
+<nav class="flex-nav">
+    <div class="flex-nav-info">
+    <div style="display:flex; justify-content: center; text-align: left; font-weight: bold;">
+        Teléfono: 999-999-999
+        <br>
+        Contacto: hola@holamundo.com
+    </div>
+    </div>
+    <div class="flex-nav-logo"><div class="logo">
+        <img src="img/bar.svg" alt="chocolate-bar" style="width:48px;height:48px; object-fit: cover;">
+    </div>
+    </div> 
+  </nav>
+  
+  <!--FIRST SECTION (3,4,5,6,7)-->
+  <section class="first-section">
+    <div class="first-section-1">
+        <div>
+            ¿Algún color en especial?: <input type="color" name="color" id="color" onchange=change_color()>
+        </div>
+    </div>
+
+    <div class="first-section-2">
+        <div class="first-section-2-img">
+            <img src="img/coffee-dark-candy-chocolate-65882.jpg" alt="chocolate-dark-candy" style="width:300px;height:300px; object-fit: cover; border-radius: 8px;">
+        </div>
+    </div>
+
+    <div class="first-section-3">
+      <div>
+        <p><b>Traemos todo tipo de chocolates de cada país para que puedas probarlos como si estuvieras ahí.</b></p>
+        <button class="first-section-3-btn">Nuestras Marcas</button>
+      </div>
+
+    </div>
+
+    <div class="first-section-4">
+        <div class="first-section-4-img">
+            <div class="centered">
+                <p><b>Tu suscripción mensual de chocolates<br>El club te espera</b></p>
+                <button class="first-section-4-btn">Unirme</button>
+            </div>
+            <img src="img/grand-ferrero-rocher-bauble-754191.jpg" alt="rocher-bauble" style="width:300px;height:300px; object-fit: cover; border-radius: 8px;">
+        </div>
+    </div>
+
+    <div class="first-section-5">
+        <div style="text-align: left; padding: 20px;">
+            <form action="action_page.php" method="get">
+              <label for="fname">Nombres y Apellidos</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name and lastname..">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+              <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" placeholder="999-999-999" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required>
+              
+              <label for="birthday">Fecha:</label>
+                <input type="date" id="date" name="date">
+              <br><br>
+               <input type="submit" value="Recibir novedades">
+            </form>
+          </div>
+    </div>
+  </section>
+  
+  <!--SECOND SECTION (8)-->
+  <section class="second-section">
+    <div class="second-section-1">
+      <div class="second-section-1-img">
+        <div class="second-section-centered">
+            <h4><b>Nuestras marcas son generosas</b></h4><p>20% de las ganancias van a ONG's que cuidan los cultivos del Cacao</p>
+            <button class="second-section-1-btn">Saber más</button>
+        </div>
+        <img src="img/selective-photo-of-brown-powder-on-stainless-spoon-1212845.jpg" alt="brown-powder" style="width:100%;height:400px; object-fit: cover; border-radius: 8px 8px 0 0;">
+    </div>
+    </div>
+  </section>
+  
+  <!--THIRD SECTION (9,10,11,12,13,14)-->
+  <section class="third-section">
+  <div class="third-section-title">Puede escoger entre nuestras marcas por países</div>
+  <div class="third-section-0">
+    <div class="third-section-1">
+      <div class="third-section-1-card">
+        <img src="img/empty-concrete-tunnel-through-mosque-1007431.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-1-card-container">
+          <p><b>De la India</b></p> 
+          <a href="#">Quiero pedir</a> 
+        </div>
+      </div>
+    </div>
+    <div class="third-section-2">
+      <div class="third-section-2-card">
+        <img src="img/neon-signs-1798631.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-2-card-container">
+          <p><b>De Japón</b></p> 
+          <a href="#">Quiero pedir</a> 
+        </div>
+      </div>
+    </div>
+    <div class="third-section-3">
+      <div class="third-section-3-card">
+        <img src="img/action-america-architecture-avenue-378570.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-3-card-container">
+          <p><b>De USA</b></p> 
+          <a href="#">Quiero pedir</a>
+        </div>
+      </div>
+    </div>  
+    <div class="third-section-4">
+      <div class="third-section-4-card">
+        <img src="img/france-landmark-lights-night-2363.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-4-card-container">
+          <p><b>De Francia</b></p> 
+          <a href="#">Quiero pedir</a> 
+        </div>
+      </div>
+    </div>
+    <div class="third-section-5">
+      <div class="third-section-5-card">
+        <img src="img/photo-of-cathedral-near-buildings-and-river-2311602.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-5-card-container">
+          <p><b>De Finlandia</b></p> 
+          <a href="#">Quiero pedir</a> 
+        </div>
+      </div>
+    </div>
+    <div class="third-section-6">
+      <div class="third-section-6-card">
+        <img src="img/buildings-near-the-beach-1559699.jpg" alt="Avatar" style="width:240px;height:240px; object-fit: cover; border-radius: 8px 8px 0 0;">
+        <div class="third-section-6-card-container">
+          <p><b>De Colombia</b></p> 
+          <a href="#">Quiero pedir</a> 
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!--FOOTER-->
+  <section class="footer-section">
+    <div class="footer-section-1">
+      <div class="footer-section-title-social">Podemos comunicarnos también por aquí</div>
+      <div class="footer-section-1-social">
+        <a href="#" class="social"><img src="img/brands-and-logotypes (1).svg" alt=""></a>
+        <a href="#" class="social"><img src="img/brands-and-logotypes.svg" alt=""></a>
+        <a href="#" class="social"><img src="img/circular.svg" alt=""></a>
+        <a href="#" class="social"><img src="img/brands-and-logotypes (2).svg" alt=""></a>
+      </div>
+      <div><p style="color: white;">&copy; <a href="#" style="color: white;">Pipo Corp</a></p></div>
+    </div>
+  </section>
+
+  <!--SCRIPTS-->
+  <script type="text/javascript">
+    function change_color() {
+        var get_color=document.getElementById("color").value;
+        document.bgColor=""+get_color;
+    }
+  </script>
+</body>
+</html>
